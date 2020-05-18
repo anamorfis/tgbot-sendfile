@@ -1,0 +1,10 @@
+[Unit]
+Description=Send file bot in Telegram
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=tgbot-sendfile/tgbot-sendfile.sh
+
+[Install]
+WantedBy=multi-user.target
