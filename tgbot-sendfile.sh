@@ -3,7 +3,10 @@
 # скрипт мониторит наличие новых файлов и отправляет их в телеграм
 # необхоидмо установить: apt-get install inotify-tools
 
-source config.cfg
+MONITOR_DIR=
+CHAT_ID=
+BOT_TOKEN=
+
 
 sendfile(){
 curl -s -F "chat_id=$CHAT_ID" -F document=@$1 https://api.telegram.org/bot$BOT_TOKEN/sendDocument

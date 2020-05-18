@@ -7,8 +7,6 @@
 apt-get install inotify-tools
 ```
 
-# config.cfg
-
 **MONITOR_DIR=** Каталог который надо сканировать
 
 **BOT_TOKEN=** Получаем у BotFather при регистрации нового бота или уже сушествующего
